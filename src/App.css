@@ -5,19 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,4 +26,46 @@
 
 .read-the-docs {
   color: #888;
+}
+/* Styl dla całej nawigacji */
+nav {
+  background-color: #333; /* ciemne tło */
+  padding: 10px 20px; /* padding wokół nawigacji */
+  text-align: center; /* centrowanie elementów w poziomie */
+}
+
+/* Styl dla listy <ul> */
+nav ul {
+  list-style-type: none; /* usunięcie domyślnych punktów */
+  margin: 0; /* usunięcie marginesu */
+  padding: 0; /* usunięcie paddingu */
+  display: flex; /* ustawienie elementów w poziomie */
+  justify-content: center; /* centrowanie listy */
+}
+
+/* Styl dla każdego elementu <li> */
+nav li {
+  margin: 0 15px; /* margines pomiędzy elementami */
+}
+
+/* Styl dla linków <Link> */
+nav a {
+  color: #fff; /* kolor tekstu na biały */
+  text-decoration: none; /* usunięcie podkreślenia */
+  font-size: 16px; /* wielkość czcionki */
+  padding: 8px 12px; /* padding wokół tekstu */
+  transition: background-color 0.3s ease; /* płynna zmiana koloru tła */
+}
+
+/* Styl dla linków przy najechaniu */
+nav a:hover {
+  background-color: #ff6600; /* kolor tła po najechaniu */
+  border-radius: 4px; /* zaokrąglone rogi */
+}
+
+/* Aktywny link - np. kiedy jest na stronie "Regular" */
+nav a.active {
+  background-color: #ff6600; /* kolor tła aktywnego linku */
+  color: #fff; /* kolor tekstu aktywnego linku */
+  border-radius: 4px;
 }
