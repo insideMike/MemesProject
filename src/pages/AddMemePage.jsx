@@ -1,8 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import "../../src/AddMemePage.css";
-
+import "./AddMemePage.css";
 const AddMemePage = ({ addMeme }) => {
   const [title, setTitle] = useState("");
   const [url, setUrl] = useState("");
@@ -28,7 +27,7 @@ const AddMemePage = ({ addMeme }) => {
 
   return (
     <div className="form-container">
-      <h1>Dodaj Nowego Mema</h1>
+      <h1 className="form-title">Dodaj Nowego Mema</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="title">Tytuł</label>
