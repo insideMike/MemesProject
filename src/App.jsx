@@ -3,6 +3,8 @@ import { useState } from "react";
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
 import memesData from "./data/memesData";
+import AddMemePage from "./pages/AddMemePage";
+
 import Hot from "./pages/Hot";
 import Regular from "./pages/Regular";
 
@@ -20,7 +22,9 @@ function App() {
       })
     );
   };
-
+  const addMeme = (newMeme) => {
+    setMemes((prevMemes) => [...prevMemes, newMeme]);
+  };
   return (
     <BrowserRouter>
       <nav>
@@ -35,11 +39,17 @@ function App() {
               Hot
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/add-meme" activeclassname="active">
+              Dodaj Mema
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <Routes>
         <Route path="/" element={<Regular memes={memes} vote={vote} />} />
         <Route path="/hot" element={<Hot memes={memes} vote={vote} />} />
+        <Route path="/add-meme" element={<AddMemePage addMeme={addMeme} />} />
       </Routes>
     </BrowserRouter>
   );
