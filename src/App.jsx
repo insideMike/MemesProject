@@ -29,7 +29,7 @@ function App() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/memes-project/" activeclassname="active">
+            <NavLink to="/" activeclassname="active">
               Regular
             </NavLink>
           </li>
@@ -47,7 +47,7 @@ function App() {
       </nav>
       <Routes>
         <Route
-          path="/memes-project/"
+          path="/"
           element={
             <MemesPage
               memes={memes}
