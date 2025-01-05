@@ -1,15 +1,18 @@
 import PropTypes from "prop-types";
-import MemeList from "../components/MemeList";
+import MemeList from "./MemeList";
 
-const Regular = ({ memes, vote }) => {
+const MemesPage = ({ memes, vote, filter, title }) => {
+  const filteredMemes = memes.filter(filter);
+
   return (
     <>
-      <h1>Regular Memes</h1>
-      <MemeList memes={memes} vote={vote} />
+      <h1>{title}</h1>
+      <MemeList memes={filteredMemes} vote={vote} />
     </>
   );
 };
-Regular.propTypes = {
+
+MemesPage.propTypes = {
   memes: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
@@ -19,5 +22,8 @@ Regular.propTypes = {
     })
   ).isRequired,
   vote: PropTypes.func.isRequired,
+  filter: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
 };
-export default Regular;
+
+export default MemesPage;

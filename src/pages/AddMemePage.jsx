@@ -11,18 +11,19 @@ const AddMemePage = ({ addMeme }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (title && url) {
-      const newMeme = {
-        id: Date.now(),
-        title,
-        url,
-        votes,
-      };
-      addMeme(newMeme);
-      navigate("/"); // Przekierowanie na stronę główną
-    } else {
+    if (!title || !url) {
       setError("Tytuł i URL są wymagane.");
+      return;
     }
+
+    const newMeme = {
+      id: Date.now(),
+      title,
+      url,
+      votes,
+    };
+    addMeme(newMeme);
+    navigate("/");
   };
 
   return (
