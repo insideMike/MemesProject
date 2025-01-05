@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/MemesProject">
       <nav>
         <ul>
           <li>
