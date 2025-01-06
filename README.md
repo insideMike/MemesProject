@@ -1,5 +1,7 @@
 Mem serwis
 
+Aplikacja Do przetestowania pod adresem: https://insidemike.github.io/MemesProject/
+
 Aplikacja stworzona w React z wykorzystaniem Vite, która umożliwia przeglądanie oraz dodawanie memów. Projekt pozwala na łatwe zarządzanie i wyświetlanie kolekcji memów w atrakcyjnej formie.
 
 🚀 Funkcje
