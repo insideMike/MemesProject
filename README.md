@@ -21,16 +21,15 @@ Node.js w wersji 14.0.0 lub wyższej
    Przejdź do katalogu projektu i zainstaluj wszystkie zależności:
    `cd memes-project`
    `npm install`
-
-# lub jeśli używasz yarn
-
-`yarn install` 3. Uruchom aplikację lokalnie:
-Aby uruchomić aplikację w trybie deweloperskim, użyj poniższego polecenia:
-`npm run dev`
-
-# lub jeśli używasz yarn
-
-`yarn dev`
+   # lub jeśli używasz yarn
+   `yarn install`
+   
+4. Uruchom aplikację lokalnie:
+   Aby uruchomić aplikację w trybie deweloperskim, użyj poniższego polecenia:
+   `npm run dev`
+   
+   # lub jeśli używasz yarn
+   `yarn dev`
 Po uruchomieniu aplikacji, otwórz przeglądarkę i przejdź pod adres http://localhost:3000, aby zobaczyć działającą aplikację.
 
 🗂️ Struktura projektu
@@ -50,9 +49,3 @@ CSS – Stylowanie aplikacji.
 Przeglądaj dostępne memy – Po uruchomieniu aplikacji, użytkownik może przeglądać listę dostępnych memów oraz oddawać głosy.
 Dodaj nowy mem – Aby dodać nowy mem, kliknij przycisk "Dodaj mema" i uzupełnij formularz.
 
-🔧 Rozwój
-Aby rozwinąć aplikację, możesz:
-
--Dodać funkcję edytowania lub usuwania memów.
--Przechowywać memy w bazie danych lub użyć zewnętrznego API.
--Dodać uwierzytelnianie użytkowników.
